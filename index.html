@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Vins | London's Elite Coffee Boutique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Updated Navbar with Hamburger -->
+<nav class="navbar scrolled">
+  <div class="container nav-flex">
+    
+    <a href="index.html" class="logo">CAFÉ VINS</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="visit.html">VISIT</a></li>
+    </ul>
+
+    <!-- ✅ HAMBURGER (ADD THIS) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+<!-- Mobile Overlay Menu -->
+<!-- <div class="mobile-menu" id="mobile-menu">
+    <ul class="mobile-nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="visit.html">VISIT</a></li>
+    </ul>
+</div> -->
+
+
+    <!-- SECTION 1: HERO -->
+    <header class="hero">
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+            <span class="tagline">IMMERSIVE COFFEE EXPERIENCE</span>
+            <h1>London's <i>Hidden</i> Gem.</h1>
+            <p>Where immaculate feng shui meets artisanal perfection.</p>
+            <div class="hero-btns">
+                <a href="#menu-summary" class="primary-btn">OUR MENU</a>
+                <a href="visit.html" class="secondary-btn">VISIT US</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 2: ABOUT SUMMARY -->
+    <section class="section-padding bg-black">
+        <div class="container grid-2">
+            <div class="img-box" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Interior">
+            </div>
+            <div class="text-box" data-aos="fade-left">
+                <span class="gold-text">OUR STORY</span>
+                <h2>More Than Just a Cafe.</h2>
+                <p>Welcome to Café Vins, a proudly LGBTQ+ friendly boutique space in the heart of London. Dedicated to serving excellent coffee from legit baristas.</p>
+                <a href="about.html" class="link-underlined">READ OUR FULL STORY</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: MENU HIGHLIGHTS -->
+    <!-- <section id="menu-summary" class="section-padding bg-dark">
+        <div class="container">
+            <div class="text-center mb-80">
+                <span class="gold-text">CRAFTED WITH PASSION</span>
+                <h2 class="serif-title">Signature Highlights</h2>
+            </div>
+            <div class="menu-summary-grid">
+                <div class="menu-card-mini" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=400&q=80" alt="Flat White">
+                    <h3>Velvet Flat White</h3>
+                    <p>Double shot excellence.</p>
+                </div>
+                <div class="menu-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=400&q=80" alt="Matcha">
+                    <h3>Ceremonial Matcha</h3>
+                    <p>Pure Japanese grade.</p>
+                </div>
+            </div>
+            <div class="text-center mt-50">
+                <a href="menu.html" class="primary-btn">VIEW FULL MENU</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- SECTION 3: MENU HIGHLIGHTS (With Cinematic Background) -->
+<section id="menu-summary" class="menu-highlights-immersive">
+    <div class="menu-bg-overlay"></div> <!-- Ye image ko dark karega taake text nazar aaye -->
+    
+    <div class="container relative-z">
+        <div class="text-center mb-80" data-aos="fade-up">
+            <span class="gold-text">CRAFTED WITH PASSION</span>
+            <h2 class="serif-title white-text">Signature Highlights</h2>
+        </div>
+
+        <div class="menu-summary-grid">
+            <!-- Glass Card 1 -->
+            <div class="menu-card-glass" data-aos="fade-up">
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=400&q=80" alt="Flat White">
+                </div>
+                <div class="card-content">
+                    <h3>Velvet Flat White</h3>
+                    <p>Double shot excellence with silky micro-foam.</p>
+                    <span class="gold-price">£4.00</span>
+                </div>
+            </div>
+
+            <!-- Glass Card 2 -->
+            <div class="menu-card-glass" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=400&q=80" alt="Matcha">
+                </div>
+                <div class="card-content">
+                    <h3>Ceremonial Matcha</h3>
+                    <p>Pure Japanese grade whisked for perfection.</p>
+                    <span class="gold-price">£4.50</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-50">
+            <a href="menu.html" class="primary-btn">EXPLORE FULL MENU</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- NEW SECTION: THE VIBE GALLERY -->
+<section id="gallery-summary" class="section-padding bg-black">
+    <div class="container">
+        <div class="text-center mb-80" data-aos="fade-up">
+            <span class="gold-text">VISUAL JOURNEY</span>
+            <h2 class="serif-title">Catch The Vibe</h2>
+        </div>
+        
+        <!-- Masonry Grid Style Gallery -->
+        <div class="vibe-gallery-grid">
+            <div class="gallery-item tall" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Vibe 1">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Vibe 2">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Vibe 3">
+            </div>
+            <div class="gallery-item wide" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=80" alt="Vibe 4">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- SECTION 4: TESTIMONIALS -->
+    <section class="section-padding bg-black">
+        <div class="container text-center" data-aos="fade-up">
+            <h2 class="serif-title">4.8 ★★★★★ (526 Reviews)</h2>
+            <p class="review-text">"Quaint little coffee shop with good music, excellent coffee and legit baristas."</p>
+        </div>
+    </section>
+
+    <!-- SECTION 5: VISIT MINI -->
+    <!-- <section class="section-padding bg-dark">
+        <div class="container visit-mini">
+            <div class="visit-content" data-aos="fade-up">
+                <h2>Come Catch the Vibe.</h2>
+                <p>Open Sunday from 9 AM. Visit us in Central London.</p>
+                <a href="visit.html" class="btn-gold-sm">GET DIRECTIONS & HOURS</a>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- THE CINEMATIC FINALE: YOUR DESTINATION AWAITS -->
+<section class="final-destination-parallax">
+    <div class="parallax-overlay"></div> <!-- Dark overlay for text readability -->
+    <div class="container destination-content" data-aos="fade-up">
+        <span class="gold-tag-large">YOUR DESTINATION AWAITS</span>
+        <h2 class="serif-title-xl">Come Catch <br>the <i>Vibe.</i></h2>
+        <p>Step into a world of immaculate feng shui and artisanal excellence. <br>Your weekend ritual starts here.</p>
+        <div class="destination-btns">
+            <a href="visit.html" class="primary-btn-gold">GET DIRECTIONS</a>
+            <a href="https://wa.me/yournumber" class="whatsapp-btn-white"><i class="fab fa-whatsapp"></i> CHAT WITH US</a>
+        </div>
+    </div>
+</section>
+
+<!-- THE PROFESSIONAL FOOTER LINKS (SIMPLE & CLEAN) -->
+<footer class="footer-minimal">
+    <div class="container">
+        <div class="footer-grid-simple">
+            <div class="footer-brand">
+                <div class="logo-footer">CAFÉ VINS</div>
+                <p>LGBTQ+ Friendly • Independent • Authentic</p>
+            </div>
+            <div class="footer-info">
+                <p>123 Coffee Lane, Central London</p>
+                <p>hello@cafevins.com | +44 20 1234 5678</p>
+            </div>
+            <div class="footer-social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 CAFÉ VINS. DESIGNED FOR THE ELITE.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+   
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        window.onscroll = function() {
+            let nav = document.querySelector('.navbar');
+            if (window.pageYOffset > 100) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        };
+    </script>
+   <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (!hamburger || !navLinks) return;
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+    document.body.classList.toggle("no-scroll");
+  });
+
+});
+</script>
+
+</body>
+</html>

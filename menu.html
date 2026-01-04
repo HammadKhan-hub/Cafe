@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Menu | Café Vins London</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black">
+
+    <nav class="navbar scrolled">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">CAFÉ VINS</a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html" class="active">MENU</a></li>
+                <li><a href="visit.html">VISIT</a></li>
+            </ul>
+            <a href="visit.html" class="nav-btn">BOOK A TABLE</a>
+        </div>
+    </nav>
+
+    <section class="subpage-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-sub" data-aos="fade-up">
+            <span class="gold-text">CURATED SELECTION</span>
+            <h1>The <i>Menu</i></h1>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="menu-grid">
+                <!-- Coffee Column -->
+                <div class="menu-cat" data-aos="fade-right">
+                    <span class="gold-text">COFFEE CLASSICS</span>
+                    <div class="menu-item">
+                        <div class="item-head"><h3>Velvet Flat White</h3> <span>£4.00</span></div>
+                        <p>Our signature double-shot espresso with silky micro-foam.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-head"><h3>Artisanal Cortado</h3> <span>£3.50</span></div>
+                        <p>The perfect balance of strength and texture.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-head"><h3>Classic Latte</h3> <span>£4.20</span></div>
+                        <p>Creamy, smooth, and prepared by legit baristas.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-head"><h3>Long Black</h3> <span>£3.20</span></div>
+                        <p>For the purists who value the bean's origin.</p>
+                    </div>
+                </div>
+
+                <!-- Specialties Column -->
+                <div class="menu-cat" data-aos="fade-left">
+                    <span class="gold-text">SIGNATURE SPECIALTIES</span>
+                    <div class="menu-item">
+                        <div class="item-head"><h3>Ceremonial Matcha</h3> <span>£4.50</span></div>
+                        <p>Pure Japanese grade matcha whisked to perfection.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-head"><h3>Iced Matcha Latte</h3> <span>£4.80</span></div>
+                        <p>Our refreshing take on a modern classic.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-head"><h3>Vins Cold Brew</h3> <span>£4.50</span></div>
+                        <p>12-hour steeped, smooth, and full-bodied.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-50" data-aos="fade-up">
+                <p class="gold-text">PRICING NOTICE: MOST ITEMS RANGE FROM £1 – £10</p>
+                <p class="gray-text">Ask our baristas about our seasonal guest roasts.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 CAFÉ VINS. LONDON'S HIDDEN GEM.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
+</body>
+</html>
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    // Optional: Animate hamburger to X
+    hamburger.classList.toggle('toggle');
+});
+</script>

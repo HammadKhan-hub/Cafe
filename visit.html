@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit & Inquiries | Café Vins London</title>
+    
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+     <nav class="navbar scrolled">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">CAFÉ VINS</a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="visit.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="about.html" class="active">VISIT</a></li>
+            </ul>
+            <a href="visit.html" class="nav-btn">BOOK A TABLE</a>
+        </div>
+    </nav>
+
+    <!-- CINEMATIC HERO -->
+    <header class="hero-page">
+        <div class="container" data-aos="fade-up">
+            <span style="color: var(--gold); letter-spacing: 4px; font-weight: bold; font-size: 0.8rem;">ESTD 2026 • LONDON</span>
+            <h1>Find <i>Us</i></h1>
+        </div>
+    </header>
+
+    <!-- INFO GRID -->
+    <section class="section-padding">
+        <div class="container grid-2">
+            <div data-aos="fade-right">
+                <h2 style="font-family: var(--serif); font-size: 3rem; color: var(--gold);">Hours</h2>
+                <ul class="hours-list">
+                    <li>Sunday <span>09:00 — 17:00</span></li>
+                    <li>Monday - Friday <span>08:00 — 18:00</span></li>
+                    <li>Saturday <span>09:00 — 19:00</span></li>
+                </ul>
+                <div style="margin-top: 50px;">
+                    <p style="color: var(--gold); letter-spacing: 2px; font-weight: bold; font-size: 0.8rem;">LOCATION</p>
+                    <p style="font-size: 1.1rem; margin-top: 10px;">123 Coffee Lane, Central London</p>
+                </div>
+            </div>
+           <div class="map-box" data-aos="fade-left">
+    <!-- Google Maps Embed -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.905020791717!2d-0.12463102337941037!3d51.5149507718148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ccab37602d%3A0xca023687216ae0ad!2sLeicester%20Square!5e0!3m2!1sen!2suk!4v1704410000000!5m2!1sen!2suk" 
+        width="100%" 
+        height="100%" 
+        style="border:0; filter: grayscale(100%) invert(90%) contrast(90%);" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+        </div>
+    </section>
+
+    <!-- REDESIGNED LUXURY FORM -->
+    <section class="contact-wrap section-padding">
+        <div class="form-overlay"></div>
+        <div class="container">
+            <div class="form-container" data-aos="fade-up">
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <span style="color: var(--gold); letter-spacing: 4px; font-weight: bold; font-size: 0.8rem;">INQUIRIES</span>
+                    <h2 style="font-family: var(--serif); font-size: 3.5rem; color: var(--white); margin-top: 15px;">Drop Us a <i>Line</i></h2>
+                </div>
+                <form class="luxury-form">
+                    <div class="form-row">
+                        <div class="input-group"><label>NAME</label><input type="text" placeholder="John Doe"></div>
+                        <div class="input-group"><label>EMAIL</label><input type="email" placeholder="john@example.com"></div>
+                    </div>
+                    <div class="input-group"><label>MESSAGE</label><textarea rows="4" placeholder="How can we help?"></textarea></div>
+                    <div class="text-center">
+                        <button type="submit" class="primary-btn">SEND MESSAGE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-minimal">
+        <p style="font-size: 0.7rem; opacity: 0.5;">&copy; 2026 CAFÉ VINS. LONDON'S FINEST SANCTUARY.</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({ once: true });
+
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const body = document.body;
+
+            // HAMBURGER TOGGLE logic
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                body.classList.toggle('no-scroll');
+            });
+
+            // Close menu on click
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    body.classList.remove('no-scroll');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
