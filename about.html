@@ -12,38 +12,28 @@
 </head>
 <body class="bg-black">
 
-    <!-- Navbar (Pre-scrolled for subpages) -->
+    <!-- Navbar (Corrected with Hamburger) -->
     <nav class="navbar scrolled">
         <div class="container nav-flex">
             <a href="index.html" class="logo">CAFÉ VINS</a>
+            
             <ul class="nav-links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html" class="active">ABOUT</a></li>
                 <li><a href="menu.html">MENU</a></li>
                 <li><a href="visit.html">VISIT</a></li>
             </ul>
+
+            <!-- ✅ HAMBURGER BUTTON (Sahi ID ke saath) -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <a href="visit.html" class="nav-btn">BOOK A TABLE</a>
         </div>
     </nav>
-
-    <!-- <header class="hero-page about-hero">
-    <div class="container" data-aos="fade-up">
-        <span class="gold-text">THE VINS JOURNEY</span>
-        <h1>Our <i>Story</i></h1>
-    </div>
-</header> -->
-
-<!-- <section class="section-padding">
-    <div class="container grid-2">
-        <div class="text-box" data-aos="fade-right">
-            <h2 class="serif-title">London's Hidden Gem.</h2>
-            <p>Welcome to Café Vins, a proudly **LGBTQ+ friendly** boutique. We serve vibes as fresh as our beans.</p>
-        </div>
-        <div class="img-box" data-aos="fade-left">
-            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Interior">
-        </div>
-    </div>
-</section> -->
 
     <!-- Subpage Hero: The Vision -->
     <section class="subpage-hero">
@@ -57,19 +47,19 @@
     <!-- Section: Philosophy -->
     <section class="section-padding">
         <div class="container grid-2">
-            <div class="text-box" data-aos="fade-right">
+            <div class="text-box" data-aos="fade-up">
                 <span class="gold-text">OUR PHILOSOPHY</span>
                 <h2 class="serif-title">A Hidden Sanctuary in the Chaos.</h2>
                 <p class="premium-p">Café Vins was born from a desire to create a "hidden gem" where the noise of London fades away. We are a sanctuary for those who value authenticity, aesthetics, and the perfect pour.</p>
                 <p>Our space is designed with <strong>immaculate feng shui</strong>, ensuring that every corner feels welcoming, sophisticated, and charming.</p>
             </div>
-            <div class="img-box" data-aos="fade-left">
+            <div class="img-box" data-aos="fade-up" data-aos-delay="100">
                 <img src="haydn-golden-EVoICOUotkg-unsplash.jpg" alt="Cafe Culture">
             </div>
         </div>
     </section>
 
-    <!-- Section: Core Values (The LGBTQ+ & Vibe focus) -->
+    <!-- Section: Core Values -->
     <section class="section-padding bg-dark">
         <div class="container">
             <div class="text-center mb-80" data-aos="fade-up">
@@ -77,19 +67,16 @@
                 <h2 class="serif-title">Our Essence</h2>
             </div>
             <div class="values-grid">
-                <!-- Value 1 -->
                 <div class="value-item" data-aos="fade-up" data-aos-delay="100">
                     <i class="fa-solid fa-rainbow gold-icon"></i>
                     <h3>Inclusive Space</h3>
-                    <p>We are a proudly <strong>LGBTQ+ friendly</strong> boutique. A safe and welcoming haven for everyone in our community.</p>
+                    <p>We are a proudly <strong>LGBTQ+ friendly</strong> boutique. A safe and welcoming haven for everyone.</p>
                 </div>
-                <!-- Value 2 -->
                 <div class="value-item" data-aos="fade-up" data-aos-delay="200">
                     <i class="fa-solid fa-mug-hot gold-icon"></i>
                     <h3>Legit Baristas</h3>
                     <p>Our team consists of experts who treat coffee as an art form, ensuring every cup is a masterpiece.</p>
                 </div>
-                <!-- Value 3 -->
                 <div class="value-item" data-aos="fade-up" data-aos-delay="300">
                     <i class="fa-solid fa-gem gold-icon"></i>
                     <h3>Immaculate Vibe</h3>
@@ -110,26 +97,17 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
             <p>&copy; 2026 CAFÉ VINS. CRAFTED FOR LONDONERS.</p>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script> <!-- ✅ MAIN JS LINKED -->
     <script>
         AOS.init({ once: true });
     </script>
 </body>
 </html>
-<script>
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    // Optional: Animate hamburger to X
-    hamburger.classList.toggle('toggle');
-});
-</script>
