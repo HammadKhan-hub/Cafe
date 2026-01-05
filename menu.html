@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signature Menu | Café Vins London</title>
+    <!-- Premium Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -14,12 +15,22 @@
     <nav class="navbar scrolled">
         <div class="container nav-flex">
             <a href="index.html" class="logo">CAFÉ VINS</a>
+            
             <ul class="nav-links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="menu.html" class="active">MENU</a></li>
                 <li><a href="visit.html">VISIT</a></li>
             </ul>
+
+            <!-- ✅ HAMBURGER BUTTON -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Mobile par is button ko hide karne ke liye class 'nav-btn' CSS mein handle hai -->
             <a href="visit.html" class="nav-btn">BOOK A TABLE</a>
         </div>
     </nav>
@@ -37,7 +48,7 @@
         <div class="container">
             <div class="menu-grid">
                 <!-- Coffee Column -->
-                <div class="menu-cat" data-aos="fade-right">
+                <div class="menu-cat" data-aos="fade-up">
                     <span class="gold-text">COFFEE CLASSICS</span>
                     <div class="menu-item">
                         <div class="item-head"><h3>Velvet Flat White</h3> <span>£4.00</span></div>
@@ -58,7 +69,7 @@
                 </div>
 
                 <!-- Specialties Column -->
-                <div class="menu-cat" data-aos="fade-left">
+                <div class="menu-cat" data-aos="fade-up" data-aos-delay="100">
                     <span class="gold-text">SIGNATURE SPECIALTIES</span>
                     <div class="menu-item">
                         <div class="item-head"><h3>Ceremonial Matcha</h3> <span>£4.50</span></div>
@@ -88,17 +99,11 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ once: true });</script>
+    <script src="script.js"></script> <!-- ✅ LINKING YOUR MAIN JS FILE -->
+    <script>
+        AOS.init({ once: true });
+    </script>
 </body>
 </html>
-<script>
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    // Optional: Animate hamburger to X
-    hamburger.classList.toggle('toggle');
-});
-</script>
